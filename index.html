@@ -118,19 +118,19 @@
      logo na coluna esquerda. Abaixo de 960px a centralização de verdade colide com a logo (a
      coluna do meio fica fixa no centro da tela, não no centro do espaço sobrando), por isso o
      grid só entra em telas com espaço de sobra. */
-  .header-row{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 20px; padding:16px 32px; }
+  .header-row{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 20px; padding:10px 32px; }
   .brand-lockup{ display:inline-flex; align-items:center; gap:10px; text-decoration:none; flex:none; min-width:0; }
   @media (min-width:960px){
     .header-row{ display:grid; grid-template-columns:1fr auto 1fr; }
     .brand-lockup{ grid-column:1; justify-self:start; }
     .main-nav{ grid-column:2; justify-self:center; }
   }
-  .brand-mark{ width:30px; height:auto; flex:none; }
+  .brand-mark{ width:57.7px; height:auto; flex:none; }
   /* Wordmark vetorizada (SVG/path), traço engrossado (~2.6%/lado do cap-height, medido e
      aplicado na biblioteca de marca em 27/08/2026) — path fixo em vez de texto ao vivo na
      fonte Tumbly, pra não depender de font-weight/-webkit-text-stroke (suporte inconsistente
      entre navegadores) pra reproduzir a mesma espessura em qualquer lugar. */
-  .brand-wordmark{ height:1.5rem; width:auto; display:block; color:var(--purple-deep); flex:none; }
+  .brand-wordmark{ height:46.2px; width:auto; display:block; color:var(--purple-deep); flex:none; }
   .brand-div{ width:1px; height:22px; background:rgba(255,255,255,.4); }
   .brand-sistemas{ font-family:var(--font-mono); font-weight:500; font-size:.82rem; letter-spacing:.22em; text-transform:uppercase; color:#fff; }
   @media (max-width:480px){ .brand-wordmark{ height:1.26rem; } .brand-sistemas{ display:none; } .brand-div{ display:none; } }
